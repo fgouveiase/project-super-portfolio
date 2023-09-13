@@ -1,0 +1,25 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+
+<body>
+    <h1>{{profile.name}}</h1>
+    <p>{{profile.bio}}</p>
+
+    {% for project in projects %}
+    <h2>{{project.name}}</h2>
+    <p>{{project.keyword}}</p>
+    <p>{{project.key_skill}}</p>
+    {% endfor %}
+
+    {% for certificate in certificates %}
+    <p>{{ certificate.name }}</p>
+    <p>{{ certificate.certifying_institution }}</p>
+    {% endfor %}
+</body>
+
+</html>
